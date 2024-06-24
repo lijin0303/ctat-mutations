@@ -211,7 +211,7 @@ workflow ctat_mutations {
         docker:{help:"Docker or singularity image"}
     }
 
-    if(!vcf_input && !defined(bam) && (defined(star_reference_dir) || defined(star_reference))) {
+    if(!vcf_input && !defined(bam) && (defined(mm2_genome_idx) || defined(mm2_splice_bed))) {
 
         if (is_long_reads) {
 
